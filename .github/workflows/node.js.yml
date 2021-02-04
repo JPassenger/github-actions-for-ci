@@ -36,9 +36,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.mode-version }}
-      - name: nmp install, and test
+      - name: npm install, and test
         run: |
-          mpn install
+          npm install
           npm test
         env:
           CI: true
